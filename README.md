@@ -4,6 +4,8 @@
 - Conforms to the **ECMAScript** specifications
 - Multi-Paradigm
 - Runs on the Client/Browser as well as the server (Node.js)
+- It is dynamically typed language. Whereas, it's superset i.e TypeScript(TS) is statically typed
+- `In statically typed languages we have to define the data types of variables before using them. eg. var name: string = "John"`
 
 # Why learn JavaScript?
 
@@ -71,13 +73,41 @@ console.log(`My name is ${name} and I am ${age}`);
 ```
 
 > - There are so many methods that can be applied on string variable like
-> - length
-> - toUpperCase
-> - toLowerCase
-> - split('seperator')
-> - substring(starting index, last index), etc.
+> - `length` to get the length of string.
+> - `toUpperCase` to capitalize all characters of the string.
+> - `toLowerCase` to convert the string into lowercase.
+> - `split('seperator')` to separate a string into an array.
+> - `substring(starting index, last index)` to get a substring from an existing string, etc.
 
 ## 2. Arrays
 
-- These are variables that holds multiple values. These are generated using an Array() constructor. /
-- **eg.** `const numbers = []`
+- These are variables that hold multiple values. These are generated using an Array() constructor. /
+- **eg.**
+
+```
+const numbers = new Array(1,2,3,4,5);
+console.log(numbers);
+```
+
+> But for the most part we use square brackets [] for an array.
+> **eg.**
+
+```
+const fruits =['apples', 'oranges', 'pears'];
+console.log(fruits);
+```
+
+- In javascript we can have any type of data in arrays.
+- **eg.** `const fruits = ['apples', 'oranges', 'pears', 10, true];`
+- _We can access the elements of an array by using there index as in javascript index of an array is always starts with 0._ \
+- **eg.** `console.log(fruits[1]);`. it will generate an **output:-** oranges. \
+- There are various methods that can be applied on arrays. \
+  > to add an element in an array we can use a direct approach i.e by using index where the element is added in an array. \
+  > **eg.** `fruits[3] = "grapes";`
+  > Doing this is not an great approach because we don't know the actual size of array and we can lost our data from that array. \
+  > So, the best approach is to use _push method_ and this will add the elements at the last of the array. \
+  > **eg.** `fruits.push("mangoes");`
+  > To add the elements at the beginning we use _unshift method_. \
+  > **eg.** `fruits.unshift("strawberry");`
+  > And if you want to take last element off then use _pop method_.
+  > **eg.** `fruits.pop();`
