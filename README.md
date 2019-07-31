@@ -69,10 +69,10 @@ console.log(`My name is ${name} and I am ${age}`);
 ```
 
 > - There are so many methods that can be applied on string variable like
->   > 1.  length
->   > 2.  toUpperCase
->   > 3.  toLowerCase
->   > 4.  split('seperator')
->   > 5.  substring(starting index, last index)
+>   > - length
+>   > - toUpperCase
+>   > - toLowerCase
+>   > - split('seperator')
+>   > - substring(starting index, last index), etc.
 
 ## 2. Arrays
