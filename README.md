@@ -41,11 +41,6 @@
 > - `var` is used when we want to initialize a variable having **Global Scope**
 > - `let & const have added with` **ES6 or ES2015**. And they have a _block level scope_.
 > - Using `let` we can re-assign values  
->   eg. ```
->   let age = 30;
->   age = 31;
+>   eg.let age = 30; \
+>   age = 31; \
 >   console.log(age);
-
-```
-
-```
