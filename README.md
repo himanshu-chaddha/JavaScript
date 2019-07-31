@@ -103,11 +103,14 @@ console.log(fruits);
 - **eg.** `console.log(fruits[1]);`. it will generate an **output:-** oranges.
 - There are various methods that can be applied on arrays.
   > to add an element in an array we can use a direct approach i.e by using index where the element is added in an array. \
-  > **eg.** `fruits[3] = "grapes";`
+  > **eg.** `fruits[3] = "grapes";`. \
   > Doing this is not an great approach because we don't know the actual size of array and we can lost our data from that array. \
-  > So, the best approach is to use _push method_ and this will add the elements at the last of the array. \
-  > **eg.** `fruits.push("mangoes");`
-  > To add the elements at the beginning we use _unshift method_. \
-  > **eg.** `fruits.unshift("strawberry");`
-  > And if you want to take last element off then use _pop method_.
-  > **eg.** `fruits.pop();`
+  > So, the best approach is to use _push() method_ and this will add the elements at the last of the array. \
+  > **eg.** `fruits.push("mangoes");`. \
+  > To add the elements at the beginning we use _unshift() method_. \
+  > **eg.** `fruits.unshift("strawberry");`. \
+  > And if you want to take last element off then use _pop() method_. \
+  > **eg.** `fruits.pop();`. \
+  > To check that if an variable is array or not use _Array.isArray()_ method. It's return type is boolean. \
+  > **eg.** `console.log(Array.isArray(fruits));`. \
+  > To get the index of any element in an array we have to use _indexOf()_ method. \
