@@ -139,8 +139,8 @@ console.log(person);
 
 - To access single value of object literals, we have to access them using dot . operator
 - **eg.** `console.log(person.firstName, person.lastName);`.
-  > we can pull the elements from an object literals into variables as: \
-  - **eg.** \
+  > we can pull the elements from an object literals into variables as:
+  - **eg.**
     ```
     const { firstName, lastName, address: { city } } = person;
     console.log(firstname, lastName);
@@ -179,7 +179,7 @@ console.log(todos[1].text);
 
 - Now, coming on Json, it is a data format which is used in full stack development.
 
-  > in using API's and sending data to a server, usually send it in json format. /
+  > in using API's and sending data to a server, usually send it in json format. \
   > this is similar to these object literals.
 
 - Json format also contains key value pairs.
