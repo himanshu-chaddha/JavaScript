@@ -89,7 +89,7 @@ const numbers = new Array(1,2,3,4,5);
 console.log(numbers);
 ```
 
-> But for the most part we use square brackets [] for an array.
+> But for the most part we use square brackets [ ] for an array.
 > **eg.**
 
 ```
@@ -114,8 +114,86 @@ console.log(fruits);
   > To check that if an variable is array or not use _Array.isArray()_ method. It's return type is boolean.
   > **eg.** `console.log(Array.isArray(fruits));`. \
   > To get the index of any element in an array we have to use _indexOf()_ method.
-  > **eg.** `console.log(fruits.indexOf('oranges'));`. \
+  > **eg.** `console.log(fruits.indexOf('oranges'));`.
 
 ## 3. Object Literals
 
 > These are key value pairs.
+
+- **eg.**
+
+```
+const person={
+    firstName: 'John',
+    lastName: 'Doe',
+    age: 30,
+    hobbies: ['music', 'movies', 'sports'],
+    address :{
+        street: '50 main st',
+        city: 'Boston',
+        state: 'MA'
+    }
+}
+console.log(person);
+```
+
+- To access single value of object literals, we have to access them using dot . operator
+- **eg.** `console.log(person.firstName, person.lastName);`.
+  > we can pull the elements from an object literals into variables as: \
+  - **eg.** \
+    ```
+    const { firstName, lastName, address: { city } } = person;
+    console.log(firstname, lastName);
+    console.log(city);
+    ```
+- We cann add properties directly to the objects as:
+
+```
+person.email = "john@example.com";
+console.log(person);
+```
+
+- Most of the time we are dealing with array of objects.
+
+```
+const todos=[
+    {
+        id: 1,
+        text: 'Feed Rusty',
+        isCompleted: true
+    },
+    {
+        id: 2,
+        text: 'Room Cleaning',
+        isCompleted: false
+    },
+    {
+        id: 3,
+        text: 'Meeting with RM',
+        isCompleted: false
+    }
+];
+console.log(todos);
+console.log(todos[1].text);
+```
+
+- Now, coming on Json, it is a data format which is used in full stack development.
+
+  > in using API's and sending data to a server, usually send it in json format. /
+  > this is similar to these object literals.
+
+- Json format also contains key value pairs.
+
+  > But the difference between these two is that all the keys in json are enclosed in double quotes. \
+  > and all the string values are also enclosed in double quotes.
+
+- We can convert the object literals into Json object using javascript as:
+
+```
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+```
+
+## 4. Methods for string, arrays, objects, etc.
+
+> These are explained above
