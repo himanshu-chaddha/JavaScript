@@ -62,19 +62,20 @@ let age = 30;
 console.log("My name is " + name + " and I am " + age);
 ```
 
-> - `This is an old of doing concatenation.`
-> - **But from ES6 we have a completly different method of concatenation i.e. template strings** _using backticks_ `we do this.` eg.
+> `This is an old of doing concatenation.`
+>
+> **But from ES6 we have a completly different method of concatenation i.e. template strings** _using backticks_ `we do this.` eg.
 
 ```
 console.log(`My name is ${name} and I am ${age}`);
 ```
 
 > - There are so many methods that can be applied on string variable like
->   > - length
->   > - toUpperCase
->   > - toLowerCase
->   > - split('seperator')
->   > - substring(starting index, last index), etc.
+> - length
+> - toUpperCase
+> - toLowerCase
+> - split('seperator')
+> - substring(starting index, last index), etc.
 
 ## 2. Arrays
 
