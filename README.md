@@ -52,5 +52,5 @@
 
 ### Data Types
 
-> - We have primitive data types that can directly assign data to memory. \
-> - Primitive data types are String, Number, Boolean, null, undefined, Symbol. [eg. dataTypes.js]()
+> - We have primitive data types that can directly assign data to memory.
+> - Primitive data types are String, Number, Boolean, null, undefined, Symbol. [eg. dataTypes.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/dataTypes.js)
