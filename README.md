@@ -54,3 +54,14 @@
 
 > - We have primitive data types that can directly assign data to memory.
 > - Primitive data types are String, Number, Boolean, null, undefined, Symbol. [eg. dataTypes.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/dataTypes.js)
+> - **Concatenation**
+
+```
+let name = "John";
+let age = 30;
+console.log("My name is " + name + " and I am " + age);
+```
+
+> `This is an old of doing concatenation.`
+
+> - **But from ES6 we have a completly different method of concatenation i.e. template strings** \*using backticks `we do this.`
