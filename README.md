@@ -53,7 +53,8 @@
 ### Data Types
 
 > - We have primitive data types that can directly assign data to memory.
-> - Primitive data types are String, Number, Boolean, null, undefined, Symbol. [eg. dataTypes.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/dataTypes.js) > **Concatenation** eg.
+> - Primitive data types are String, Number, Boolean, null, undefined, Symbol. [eg. dataTypes.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/dataTypes.js)
+>   **Concatenation** eg.
 
 ```
 let name = "John";
@@ -62,7 +63,7 @@ console.log("My name is " + name + " and I am " + age);
 ```
 
 > - `This is an old of doing concatenation.`
-> - **But from ES6 we have a completly different method of concatenation i.e. template strings** \*using backticks `we do this.` eg.
+> - **But from ES6 we have a completly different method of concatenation i.e. template strings** _using backticks_ `we do this.` eg.
 
 ```
 console.log(`My name is ${name} and I am ${age}`);
@@ -76,3 +77,6 @@ console.log(`My name is ${name} and I am ${age}`);
 >   > - substring(starting index, last index), etc.
 
 ## 2. Arrays
+
+- These are variables that holds multiple values. These are generated using an Array() constructor. /
+- **eg.** `const numbers = []`
