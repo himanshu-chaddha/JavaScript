@@ -81,7 +81,7 @@ console.log(`My name is ${name} and I am ${age}`);
 
 ## 2. Arrays
 
-- These are variables that hold multiple values. These are generated using an Array() constructor. \
+- These are variables that hold multiple values. These are generated using an Array() constructor.
 - **eg.**
 
 ```
@@ -99,9 +99,9 @@ console.log(fruits);
 
 - In javascript we can have any type of data in arrays.
 - **eg.** `const fruits = ['apples', 'oranges', 'pears', 10, true];`
-- We can access the elements of an array by using there index as in javascript index of an array is always starts with 0. \
-- **eg.** `console.log(fruits[1]);`. it will generate an **output:-** oranges. \
-- There are various methods that can be applied on arrays. \
+- We can access the elements of an array by using there index as in javascript index of an array is always starts with 0.
+- **eg.** `console.log(fruits[1]);`. it will generate an **output:-** oranges.
+- There are various methods that can be applied on arrays.
   > to add an element in an array we can use a direct approach i.e by using index where the element is added in an array. \
   > **eg.** `fruits[3] = "grapes";`
   > Doing this is not an great approach because we don't know the actual size of array and we can lost our data from that array. \
