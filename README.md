@@ -27,3 +27,10 @@
 10. DOM manipulation
 11. Events
 12. Basic Form Validation
+
+# Let's Jump In !
+
+**Text Editor - Vs Code**
+
+- _Install Live server extension in vs code_ \ This allows the browser to refresh when we save the page.
+  `Write your javascript at the bottom of our code i.e just above the <body> tag in <script> tag`
