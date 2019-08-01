@@ -519,6 +519,29 @@ console.log(person2.getFullName());
 - Also you can see the `document` property here, which makes up the DOM.
 - another one i.e `fetch` api, used to make HTTP requests.
 
-* Single Selector
-  > - `getElementById()`, used
-* Multiple Selector
+* **Single Selector**
+
+  > - `getElementById('id')`, used to select a single element having that specific id
+  > - `querySelector('a tag name || #id || .class')`, used to select as we do in JQuery, and prefixes are dot(.class) for a class, hash(#id) for an id and html tags can be directly written. All these should be passed as a parameter using quotes ''.
+
+  ```
+  console.log(document.getElementById('my-form'));
+  console.log(document.querySelector('h1'));
+
+  ```
+
+* **Multiple Selector**
+
+> - `querySelectorAll('.class || a tag name')`, used to select all the elements associated with that selector.
+>   `it returns a NodeList which is very similar to an array and we can run all methods of array on it.` \
+> - `getElementsByClassName('class')`, used to select all elements associated with this class. Here we don't use dot(.) operator for a class name.
+>   `here it will return a HTMLCollection which is not an array and we have to manually convert it into array to manipulate this.` \
+> - `getElementsByTagName('tag name')`, used to select all tags of similar type which is specified in the parameter.
+>   `this selector is also return a HTMLCollection.` So, among all these querySelector() is the best to use and manipulate.
+
+```
+console.log(document.querySelectorAll(".item"));
+console.log(document.getElementsByClassName("item"));
+```
+
+`You may see this file.`[eg. main.js]()
