@@ -318,9 +318,9 @@ if(x === 10){
 }
 ```
 
-`This time condition will become falsy and there is no output on the console.`
+`This time, condition will become falsy and there is no output on the console.`
 
-- We can also have else statement with an if statement and also can have a nested if block, which will have a chain of if-> else if-> else statements.
+- We can also have **else statement** with an if statement and also can have a **nested if block, which will have a chain of if-> else if-> else statements.**
 
 ```
 const x = 20;
@@ -372,3 +372,60 @@ switch(color){
 ```
 
 ## 7. Functions (normal & arrow)
+
+> Functions are created using _function_ keyword followed by the function names and parenthesis. \
+> It may or may not have arguments. \
+> Also, we have to call a function in order to execute it.
+
+- **eg.**
+
+```
+function addNums(num1, num2){
+    console.log(num1 + num2);
+}
+addNums(3,5);
+```
+
+`But, what will happen when we didn't pass any parameter to the function call.`
+
+> `addNums()` \
+> It will return NaN on the console i.e Not a Number.
+
+- We can also set default values to the function arguments.
+
+```
+function addNums(num1 = 3, num2 = 5){
+    console.log(num1 + num2);
+}
+addNums();
+```
+
+> `Now if you are not any value to the function call then it will return the sum of default values instead of NaN`. \
+> `And if you are passing values then these values will overwrite the default values.`
+
+- And by **ES6 arrow functions** are added to JS.
+  > In arrow functions instead of using function keyword we would name it as a variable. \
+  > It could be written as:
+
+```
+const addNums(num1 = 3, num2 = 5) =>{
+    return num1 + num2;
+}
+console.log(addNums(5,10));
+```
+
+**Note 1:** `If you have only one line in the arrow funtion then there is no need to write curlibraces {}. Just write that line in front of your arrow i.e =>. And no need to return a value it automatically does that.`
+
+```
+const addNums(num1 = 3, num2 = 5) => num1 + num2;
+console.log(addNums(5,10));
+```
+
+**Note 2:** `And if have have only one argument in your function then it will become to short as now we even don't need any paranthesis to write function arguments.`
+
+```
+const addNums = num1 => num1 + 5;
+console.log(addNums(5));
+```
+
+## 8. OOP (prototypes & classes)
