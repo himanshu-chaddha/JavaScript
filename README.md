@@ -507,3 +507,18 @@ console.log(person2.getFullName());
 `This also works as same before. It will add the functions to the prototype as doing before.` for this you can refer [eg. classes.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/classes.js)
 
 ## 9. DOM selection
+
+> DOM is the Document Object Model, it is basically a tree structure of our whole HTML and its tag inside any html document. \
+> in this we select html elements, store them in variables and manipulate them. This is done inside a JS file or <script></script> tags inside document itself. \
+> There are various type of selectors- \
+> `window object is the parent object of the browser. and can be accessed as:` `console.log(window);`.
+
+- window object contains all methods inside it, so we don't need to write like `window.alert('hello');`. Instead of this, we use only `alert('hello');`.
+- And if you open your console and write `console.log(window);`, you we get an object of window.
+- This conatins everything where you can also see `localStorage` property which is used to store things on browser.
+- Also you can see the `document` property here, which makes up the DOM.
+- another one i.e `fetch` api, used to make HTTP requests.
+
+* Single Selector
+  > - `getElementById()`, used
+* Multiple Selector
