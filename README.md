@@ -508,8 +508,8 @@ console.log(person2.getFullName());
 
 ## 9. DOM selection
 
-> DOM is the Document Object Model, it is basically a tree structure of our whole HTML and its tag inside any html document. \
-> in this we select html elements, store them in variables and manipulate them. This is done inside a JS file or <script></script> tags inside document itself. \
+> DOM is the Document Object Model, it is basically a tree structure of our whole HTML and its tag inside any html document.
+> in this we select html elements, store them in variables and manipulate them. This is done inside a JS file or `<script></script>` tags inside document itself.
 > There are various type of selectors- \
 > `window object is the parent object of the browser. and can be accessed as:` `console.log(window);`.
 
