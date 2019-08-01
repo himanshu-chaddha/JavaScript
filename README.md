@@ -633,3 +633,55 @@ document.querySelector('#my-form').style.background = '#ccc';
 - There are many more events including **click** like **mouseover, mouseout**, etc.[eg. events.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/Dom_selection/event.js)
 
 ## 12. Basic Form Validation
+
+> Forms in Html is a way by which a user interacts with the browser. \
+> and validating those forms will also become essential to prevent the undesired values to be submitted.
+
+- for validating a form we need an external JS file which contains a method to validate the data coming on the submit event.
+
+```
+const myForm = document.querySelector("#my-form");
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const msg = document.querySelector(".msg");
+const userList = document.querySelector("#users");
+
+myForm.addEventListener("submit", onSubmit);
+
+function onSubmit(e) {
+  e.preventDefault();
+  console.log(nameInput.value);
+}
+```
+
+- In the above example the form is submitted even if the required values are empty.
+  > so, we need the both values to be filled correctly before submitting the form. And it could be done as:
+  ```
+  if(nameInput.value === '' || emailInput.value === ''){
+      alert('Please fill both the fields');
+  }else{
+      console.log('Successfully Submitted');
+  }
+  ```
+  > But using alert is not a good practice because it stops the whole execution of the code. \
+  > So, to prevent this problem do like this:
+
+```
+function onSubmit(e) {
+  e.preventDefault();
+
+  if (nameInput.value === "" || emailInput.value === "") {
+    msg.classList.add("error");
+    msg.innerHTML = "Please enter the fields.";
+
+    setTimeout(() => msg.remove(), 3000);
+    console.log("Invalid form submission");
+  } else {
+    console.log("Submitted successfully");
+  }
+}
+```
+
+> To create elements which is not in the DOM on an event.`const li = document.createElement('li');`. \
+> and to add text to these li's `li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));`. \
+> [eg. forms.js]()
