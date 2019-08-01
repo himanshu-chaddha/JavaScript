@@ -64,57 +64,59 @@ let age = 30;
 console.log("My name is " + name + " and I am " + age);
 ```
 
-> `This is an old of doing concatenation.`
+> `This is an old method of doing concatenation.`
 >
-> **But from ES6 we have a completly different method of concatenation i.e. template strings** _using backticks_ `we do this.` eg.
+> **But from ES6 we have a completely different method of concatenation i.e. template strings \${variable_name}** _using backticks_ we can do concatenation. eg.
 
 ```
 console.log(`My name is ${name} and I am ${age}`);
 ```
 
-> - There are so many methods that can be applied on string variable like
-> - `length` to get the length of string.
+> - There are so many methods that can be applied on string variables like:
+> - `length` to get the length of the string.
 > - `toUpperCase` to capitalize all characters of the string.
 > - `toLowerCase` to convert the string into lowercase.
-> - `split('seperator')` to separate a string into an array.
-> - `substring(starting index, last index)` to get a substring from an existing string, etc.
+> - `split('seperator')` to separate a string whenever the separator occur in the string into an array as elements.
+> - `substring(starting index, last index)` to get a substring from an existing string, and many more methods covered throughout in this course.
 
 ## 2. Arrays
 
-- These are variables that hold multiple values. These are generated using an Array() constructor.
-- **eg.**
+- These are variables that hold multiple values. These could be created by different paradigms using an Array() constructor or [ ] symbols. **eg.**
 
 ```
 const numbers = new Array(1,2,3,4,5);
 console.log(numbers);
 ```
 
-> But for the most part we use square brackets [ ] for an array.
-> **eg.**
+> But for most of the part we use square brackets [ ] to create an array. **eg.**
 
 ```
-const fruits =['apples', 'oranges', 'pears'];
+const fruits = ['apples', 'oranges', 'pears'];
 console.log(fruits);
 ```
 
-- In javascript we can have any type of data in arrays.
-- **eg.** `const fruits = ['apples', 'oranges', 'pears', 10, true];`
-- We can access the elements of an array by using there index as in javascript index of an array is always starts with 0.
-- **eg.** `console.log(fruits[1]);`. it will generate an **output:-** oranges.
+- In javascript we can have any type of data in arrays.**eg.**
+  > `const fruits = ['apples', 'oranges', 'pears', 10, true];`
+- We can access the elements of an array by using their index. And in javascript index of an array is always starts with 0 i.e. `Base Address`. **eg.**
+
+  > `console.log(fruits[1]);`.
+  > It will generate an **output:-** oranges.
+
 - There are various methods that can be applied on arrays.
-  > to add an element in an array we can use a direct approach i.e by using index where the element is added in an array.
-  > **eg.** `fruits[3] = "grapes";`. \
-  > Doing this is not an great approach because we don't know the actual size of array and we can lost our data from that array.
-  > So, the best approach is to use _push() method_ and this will add the elements at the last of the array.
-  > **eg.** `fruits.push("mangoes");`. \
-  > To add the elements at the beginning we use _unshift() method_.
-  > **eg.** `fruits.unshift("strawberry");`. \
-  > And if you want to take last element off then use _pop() method_.
-  > **eg.** `fruits.pop();`. \
-  > To check that if an variable is array or not use _Array.isArray()_ method. It's return type is boolean.
-  > **eg.** `console.log(Array.isArray(fruits));`. \
-  > To get the index of any element in an array we have to use _indexOf()_ method.
-  > **eg.** `console.log(fruits.indexOf('oranges'));`.
+
+  > - To add an element in an array we can use a direct approach i.e by using index where the element is added in that array.
+  >   **eg.** `fruits[3] = "grapes";`. \
+  > - Doing this is not an great approach because we don't know the actual size of array and we can lost our data from that array. \
+  >   So, a good approach is to use _push() method_ and this will add the elements at the last of the array.
+  >   **eg.** `fruits.push("mangoes");`. \
+  > - To add the elements at the beginning of the array, we can use _unshift() method_.
+  >   **eg.** `fruits.unshift("strawberry");`. \
+  > - And if you want to take last element off from the array, then use _pop() method_.
+  >   **eg.** `fruits.pop();`. \
+  > - To check that if an variable is array or not, then use _Array.isArray()_ method. It's return type is boolean.
+  >   **eg.** `console.log(Array.isArray(fruits));`. \
+  > - To get the index of any element in an array we have to use _indexOf()_ method.
+  >   **eg.** `console.log(fruits.indexOf('oranges'));`.
 
 ## 3. Object Literals
 
