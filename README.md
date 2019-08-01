@@ -588,3 +588,5 @@ ul.lastElementChild.innerHTML = "<h1>Smith</h1>";
 const btn = document.querySelector(".btn");
 btn.style.background = "red";
 ```
+
+`you can see this file for reference.` [eg. dom.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/Dom_selection/dom.js)
