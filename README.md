@@ -102,7 +102,7 @@ console.log(fruits);
   > `console.log(fruits[1]);`.
   > It will generate an **output:-** oranges.
 
-- There are various methods that can be applied on arrays.
+### There are various methods that can be applied on arrays.
 
 - To add an element in an array we can use a direct approach i.e by using index where the element is added in that array.
   > **eg.** `fruits[3] = "grapes";`.
@@ -119,7 +119,8 @@ console.log(fruits);
 
 ## 3. Object Literals
 
-> These are key value pairs.
+> These are key value pairs. And commonly known as objects and elements in them are properties of them. \
+> And the value of the properties of an object may be a single value, a multivalued array or an object enclosed in {} itself.
 
 - **eg.**
 
@@ -140,19 +141,20 @@ console.log(person);
 
 - To access single value of object literals, we have to access them using dot . operator
 - **eg.** `console.log(person.firstName, person.lastName);`.
-  > we can pull the elements from an object literals into variables as:
-  - **eg.**
-    ```
-    const { firstName, lastName, address: { city } } = person;
-    console.log(firstname, lastName);
-    console.log(city);
-    ```
-- We cann add properties directly to the objects as:
+  > Also, we can pull the elements from an object literals into variables as:
+  ```
+  const { firstName, lastName, address: { city } } = person;
+  console.log(firstname, lastName);
+  console.log(city);
+  ```
+- We can add properties directly to the objects by passing the key and it's value using dot . operator as:
 
 ```
 person.email = "john@example.com";
 console.log(person);
 ```
+
+`the output of this wiil be an object of person having email added this time with it's value.`
 
 - Most of the time we are dealing with array of objects.
 
@@ -178,17 +180,15 @@ console.log(todos);
 console.log(todos[1].text);
 ```
 
-- Now, coming on Json, it is a data format which is used in full stack development.
+- Now, coming on JSON (JavaScript Object Notation), it is a data format which is used in full stack development.
 
-  > in using API's and sending data to a server, usually send it in json format. \
-  > this is similar to these object literals.
+  > In using API's and sending data to a server, usually send it in JSON format. This is similar to these object literals.
 
-- Json format also contains key value pairs.
+- JSON format also contains key value pairs like object literals.
 
-  > But the difference between these two is that all the keys in json are enclosed in double quotes. \
-  > and all the string values are also enclosed in double quotes.
+  > But the difference between these two is that, all the keys in json are enclosed in double quotes. And all the values which are strings are also enclosed in double quotes.
 
-- We can convert the object literals into Json object using javascript as:
+- We can convert the object literals into JSON object using javascript as:
 
 ```
 const todoJSON = JSON.stringify(todos);
@@ -197,4 +197,11 @@ console.log(todoJSON);
 
 ## 4. Methods for string, arrays, objects, etc.
 
-> These are explained above
+> Some of these are explained above and remaining could be expalined further.
+
+## 5. Loops - for, while, for...of, forEach, map
+
+> These are used to iterate over an iterable objects. Iterable objects are those which contains elements which can be parsed separately. /
+> like arrays, object literals, etc.
+
+#### **For loop**
