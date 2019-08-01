@@ -201,7 +201,100 @@ console.log(todoJSON);
 
 ## 5. Loops - for, while, for...of, forEach, map
 
-> These are used to iterate over an iterable objects. Iterable objects are those which contains elements which can be parsed separately. /
+> Loops are a method by using which we can iterate over an iterable objects. \
+> Iterable objects are those which contains elements which can be parsed separately. \
 > like arrays, object literals, etc.
 
 #### **For loop**
+
+> For loop contains initiation of iterator, condition and increment/decrement at the same time enclosed in parenthesis.
+
+- **eg.**
+
+```
+for(let i = 0; i < 5; i++){
+    console.log(`For loop iterations : ${i}`);
+}
+```
+
+`Where first argument is assignment of the iterator or variable, second is the condition and third is the increment or decrement.`
+
+#### **While loop**
+
+> For using a while loop we have to first initialize the iterator. \
+> Then we can only start our while loop which contains only a condition as an argument. \
+> And increment/decrement would be passed inside the loop and it's necessary. If we don't pass it it will become an never ending loop. \
+> It's is not a hard and fast rule that we have to put the increment/decrement at the end of the all the statements inside loop.
+
+- **eg.**
+
+```
+let i = 0;
+while(i < 5){
+    console.log(`While loop iterations : ${i}`);
+    i++;
+}
+```
+
+- Looping through the arrays will become a easy task now as:
+
+```
+for(let i = 0; i < todos.length; i++){
+    console.log(todos[i].text);
+}
+```
+
+`It will print all the text properties of every element in the todos object.`
+
+- Also we have a better method to loop through arrays we have a **for...of** loop.
+- **eg.**
+
+```
+for(let todo of todos){
+    console.log(todo.text);
+}
+```
+
+#### we also have some high order array methods.
+
+> Some of them are forEach, map, filter, etc. These high order methods take a function as an argument. \
+> These functions are callback functons and also have a parameter which is a iterator used to loop through the arrays.
+
+- **eg. 1. forEach**
+
+```
+todos.forEach(function(todo){
+    console.log(todo.text);
+});
+```
+
+- **eg. 2. map** `First it loop through the array then it returns an array of values you want to access.`
+
+```
+const todoText = todos.map(function(todo){
+    return todo.text;
+});
+console.log(todoText);
+```
+
+- **eg. 3. filter** `Let suppose we want to only get the text of todo which is completed` or we can say that `isCompleted = true;`
+
+```
+const todoCompleted = todos.filter(function(todo){
+    return todo.isCompleted === true;
+});
+console.log(todoCompleted);
+```
+
+`Also we can take a stack of map over filter to get the only property of that because filter returns an array of objects.`
+
+```
+const todoCompleted = todos.filter(function(todo){
+    return todo.isCompleted === true;
+}).map(function(todo){
+    return todo.text;
+});
+console.log(todoCompleted);
+```
+
+## 6. Conditionals (if, ternary & switch)
