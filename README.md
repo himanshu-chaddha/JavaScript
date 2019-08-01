@@ -224,9 +224,7 @@ for(let i = 0; i < 5; i++){
 > For using a while loop we have to first initialize the iterator. \
 > Then we can only start our while loop which contains only a condition as an argument. \
 > And increment/decrement would be passed inside the loop and it's necessary. If we don't pass it it will become an never ending loop. \
-> It's is not a hard and fast rule that we have to put the increment/decrement at the end of the all the statements inside loop.
-
-- **eg.**
+> It's is not a hard and fast rule that we have to put the increment/decrement at the end of the all the statements inside loop. **eg.**
 
 ```
 let i = 0;
