@@ -246,8 +246,7 @@ for(let i = 0; i < todos.length; i++){
 
 `It will print all the text properties of every element in the todos object.`
 
-- Also we have a better method to loop through arrays we have a **for...of** loop.
-- **eg.**
+- Also we have a better method to loop through arrays we have a **for...of** loop. **eg.**
 
 ```
 for(let todo of todos){
@@ -258,7 +257,7 @@ for(let todo of todos){
 #### we also have some high order array methods.
 
 > Some of them are forEach, map, filter, etc. These high order methods take a function as an argument. \
-> These functions are callback functons and also have a parameter which is a iterator used to loop through the arrays.
+> These functions are callback functions and also have a parameter which is a iterator used to loop through the arrays.
 
 - **eg. 1. forEach**
 
@@ -286,7 +285,7 @@ const todoCompleted = todos.filter(function(todo){
 console.log(todoCompleted);
 ```
 
-`Also we can take a stack of map over filter to get the only property of that because filter returns an array of objects.`
+`Also we can take a stack of map over filter to get the only array of properties not the complete object of that because filter returns an array of objects. It can be done as:`
 
 ```
 const todoCompleted = todos.filter(function(todo){
@@ -298,3 +297,78 @@ console.log(todoCompleted);
 ```
 
 ## 6. Conditionals (if, ternary & switch)
+
+#### If statement
+
+- In JS `==` will only match the values but `===` will match value as well as the data type of that value.
+
+```
+const x = '10';
+if(x == 10){
+    console.log("x is 10");
+}
+```
+
+`Here, this if condition will become true and message will be printed on console. But, here string 10 is not equal to number 10 and condition will become truthy.So, for these types of conditions JS provides an extra operator i.e === triple equal operator.`
+
+```
+const x = '10';
+if(x === 10){
+    console.log("x is 10");
+}
+```
+
+`This time condition will become falsy and there is no output on the console.`
+
+- We can also have else statement with an if statement and also can have a nested if block, which will have a chain of if-> else if-> else statements.
+
+```
+const x = 20;
+if(x === 10){
+    console.log("x is 10");
+}else if(x > 10){
+    console.log("x is greater than 10");
+}else{
+    console.log("x is less than 10");
+}
+```
+
+- Also, we can have multiple conditions in if statement. Which is achieved by using || OR operator or && AND operator.
+
+#### Ternary Operator
+
+> This is like a shorthand if statement. And it used to assign variables based on conditions.
+
+- syntax: condition ? if true then do this : else do this;
+
+```
+const x = 10;
+const color = x > 10 ? 'red' : 'green';
+console.log(color);
+```
+
+`Here, it will print green because x is not greater than 10 and else part will be executed.`
+
+#### Switch
+
+> Switches are like a block which have cases for different values, whichever case will be true then that block will be executed. \
+> It also have a default block which will only be executed when there is no case match. \
+> Only one condition will be executed in a switch block either one of the cases or the default block in whole switch statement.
+
+```
+const x = 10;
+const color = x > 10 ? 'red' : 'green';
+switch(color){
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'green':
+        console.log('color is green');
+        break;
+    default:
+        console.log('color is neither red nor green');
+        break;
+}
+```
+
+## 7. Functions (normal & arrow)
