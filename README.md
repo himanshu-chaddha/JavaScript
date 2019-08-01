@@ -478,7 +478,7 @@ Person.prototype.getFullName = function(){
 
 - You can refer this example file of function prototyping [eg. functionPrototypes.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/functionPrototypes.js)
 
-### Clases
+#### Classes
 
 > Instead of using a constructor and prototypes separately we can combine them using classes as:
 
@@ -504,6 +504,6 @@ console.log(person1.getBirthYear());
 console.log(person2.getFullName());
 ```
 
-`This also works as same before. It will add the functions to the prototype as doing before.` for this you can refer [eg. classes.js]()
+`This also works as same before. It will add the functions to the prototype as doing before.` for this you can refer [eg. classes.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/classes.js)
 
 ## 9. DOM selection
