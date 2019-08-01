@@ -532,12 +532,12 @@ console.log(person2.getFullName());
 
 * **Multiple Selector**
 
-> - `querySelectorAll('.class || a tag name')`, used to select all the elements associated with that selector.
->   `it returns a NodeList which is very similar to an array and we can run all methods of array on it.` \
-> - `getElementsByClassName('class')`, used to select all elements associated with this class. Here we don't use dot (.) operator for a class name.
->   `here it will return a HTMLCollection which is not an array and we have to manually convert it into array to manipulate this.` \
-> - `getElementsByTagName('tag name')`, used to select all tags of similar type which is specified in the parameter.
->   `this selector is also return a HTMLCollection.` So, among all these querySelector() is the best to use and manipulate.
+  > - `querySelectorAll('.class || a tag name')`, used to select all the elements associated with that selector.
+  >   `it returns a NodeList which is very similar to an array and we can run all methods of array on it.`
+  > - `getElementsByClassName('class')`, used to select all elements associated with this class. Here we don't use dot (.) operator for a class name.
+  >   `here it will return a HTMLCollection which is not an array and we have to manually convert it into array to manipulate this.`
+  > - `getElementsByTagName('tag name')`, used to select all tags of similar type which is specified in the parameter.
+  >   `this selector is also return a HTMLCollection.` So, among all these querySelector() is the best to use and manipulate.
 
 ```
 console.log(document.querySelectorAll(".item"));
