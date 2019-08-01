@@ -427,3 +427,53 @@ console.log(addNums(5));
 ```
 
 ## 8. OOP (prototypes & classes)
+
+> Object Oriented Programming, we can create a object using constructor function with prototypes and also by ES6 classes.
+
+- A constructor function name will start from capital letter eg. `function Person(properties){}`. **eg.**
+
+```
+function Person(firstName, lastName, dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+}
+```
+
+> After creating it, we have to instantiate that with the Constructor function.
+
+```
+const person1 = new Person("John", "Doe", "3-7-1990");
+const person2 = new Person("Mary", "Smith", "4-5-1980");
+console.log(person1);
+console.log(person2.firstName);
+```
+
+> Also, we can have functions in the body of constructor.
+
+```
+function Person(firstName, lastName, dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+    this.getBirthYear = function(){
+        return this.dob.getFullYear();
+    }
+}
+console.log(person1.getBirthYear());
+```
+
+#### Function prototype
+
+> When we create an object then it have a prototype property. This can easily be seen in developer console of chrome. \
+> we use prototypes because writing the methods i.e functions in the constructor is not a good practice. Because we not might need the function in every object. \
+
+- **eg.** instead of writing getFullYear function in constructor we create its prototype
+
+```
+Person.prototype.getFullName = function(){
+    return this.dob.getFullYear();
+}
+```
+
+- You can refer this example file of function prototyping [eg. functionPrototypes.js]()
