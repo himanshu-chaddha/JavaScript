@@ -590,3 +590,46 @@ btn.style.background = "red";
 ```
 
 `you can see this file for reference.` [eg. dom.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/Dom_selection/dom.js)
+
+## 11. Events
+
+> Event in javascript are like button click etc. When we want to do anything on a event fire then we have to add listeners on that element. \
+> an event listener is `addEventListener('event', 'function(enent_parameter)')`, it takes two arguments first an event eg. `click` and second is the function which we want to be executed and this takes an event parameter.
+
+```
+const btn = document.querySelector('.btn');
+btn.addEventListener('click', (e) =>{
+    e.preventDefault();
+    console.log('Button Clicked');
+    console.log(e);
+});
+```
+
+- Here, when you see the value of 'e' on the console, it will look like an object. This object contains a target property also which is actually pointing to the element. And if you print that target on console you will actually get the element havinf that `.btn class.`
+
+```
+console.log(e.target);
+```
+
+- And if we want to get the class name or id of that element then, we can also get it as:
+
+```
+console.log(e.target.className);
+console.log(e.target.id);
+```
+
+- Also, we can change the style of the page when there is a button click or an event fire.
+
+```
+document.querySelector('#my-form').style.background = '#ccc';
+```
+
+`not only styling manually but we can add a class of css on a button click.`
+
+```
+ document.querySelector("body").classList.add("bg-dark");
+```
+
+- There are many more events including **click** like **mouseover, mouseout**, etc.
+
+## 12. Basic Form Validation
