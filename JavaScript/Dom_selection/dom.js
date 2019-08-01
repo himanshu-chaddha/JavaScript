@@ -14,3 +14,7 @@ ul.children[1].innerHTML = "Brad";
 
 // 5. ---to manipulate last child ---
 ul.lastElementChild.innerHTML = "<h1>Smith</h1>";
+
+// 6. --- to mainpulate style of any tag ---
+const btn = document.querySelector(".btn");
+btn.style.background = "red";

@@ -545,3 +545,46 @@ console.log(document.getElementsByClassName("item"));
 ```
 
 `You may see this file.`[eg. main.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/Dom_selection/main.js)
+
+## 10. DOM Manipulation
+
+> Manipulating DOM is to select any element from the html document and doing something with that.
+> There are various methods which can be applied on the selected elements.
+
+- **eg 1.** `to remove all ul from page.`
+
+```
+const ul = document.querySelector(".items");
+ul.remove();
+```
+
+- **eg 2.** `to remove last element.`
+
+```
+ul.lastElementChild.remove();
+```
+
+- **eg 3.** `to add text to the elements to first child.`
+
+```
+ul.firstElementChild.textContent = "Hello";
+```
+
+- **eg 4.** `to manipulate using indexes.`
+
+```
+ul.children[1].innerHTML = "Brad";
+```
+
+- **eg 5.** `to manipulate last child.`
+
+```
+ul.lastElementChild.innerHTML = "<h1>Smith</h1>";
+```
+
+- **eg 6.** `to mainpulate style of any tag.`
+
+```
+const btn = document.querySelector(".btn");
+btn.style.background = "red";
+```
