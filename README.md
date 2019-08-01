@@ -466,9 +466,9 @@ console.log(person1.getBirthYear());
 #### Function prototype
 
 > When we create an object then it have a prototype property. This can easily be seen in developer console of chrome. \
-> we use prototypes because writing the methods i.e functions in the constructor is not a good practice. Because we not might need the function in every object. \
+> we use prototypes because writing the methods i.e functions in the constructor is not a good practice. Because we not might need the function in every object.
 
-- **eg.** instead of writing getFullYear function in constructor we create its prototype
+- **eg.** instead of writing getFullYear() function in constructor we create its prototype
 
 ```
 Person.prototype.getFullName = function(){
@@ -476,4 +476,4 @@ Person.prototype.getFullName = function(){
 }
 ```
 
-- You can refer this example file of function prototyping [eg. functionPrototypes.js]()
+- You can refer this example file of function prototyping [eg. functionPrototypes.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/functionPrototypes.js)
