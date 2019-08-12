@@ -593,8 +593,8 @@ btn.style.background = "red";
 
 ## 11. Events
 
-> Event in javascript are like button click etc. When we want to do anything on a event fire then we have to add listeners on that element. \
-> an event listener is `addEventListener('event', 'function(enent_parameter)')`, it takes two arguments first an event eg. `click` and second is the function which we want to be executed and this takes an event parameter.
+> Event in javascript are like button click etc. If we want to do anything on a event fire then we have to add listeners on that element. \
+> an event listener is `addEventListener('event', 'function(event_parameter)')`, it takes two arguments first an event eg. `click` and second is the function which we want to be executed and this takes an event parameter.
 
 ```
 const btn = document.querySelector('.btn');
