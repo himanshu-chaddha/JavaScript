@@ -605,7 +605,7 @@ btn.addEventListener('click', (e) =>{
 });
 ```
 
-- Here, when you see the value of 'e' on the console, it will look like an object. This object contains a target property also which is actually pointing to the element. And if you print that target on console you will actually get the element havinf that `.btn class.`
+- Here, when you see the value of 'e' on the console, it will look like an object. This object contains a target property also which is actually pointing to the element. And if you print that target on console you will actually get the element having that `.btn class.`
 
 ```
 console.log(e.target);
@@ -685,3 +685,5 @@ function onSubmit(e) {
 > To create elements which is not in the DOM on an event.`const li = document.createElement('li');`. \
 > and to add text to these li's `li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));`. \
 > [eg. forms.js](https://github.com/himanshu-chaddha/JavaScript/blob/master/JavaScript/Dom_selection/forms.js)
+
+# Yeh! Completed :)
